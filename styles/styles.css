@@ -1,0 +1,817 @@
+/*--------GLOBALES--------------*/
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat/Montserrat-Regular.woff2") format("woff2"),
+    url("../fonts/montserrat/Montserrat-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat/Montserrat-Bold.woff2") format("woff2"),
+    url("../fonts/montserrat/Montserrat-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "EB_Garamond";
+  src: url("../fonts/garamond/EBGaramond-Regular.woff2") format("woff2"),
+    url("../fonts/garamond/EBGaramond-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "EB_Garamond";
+  src: url("../fonts/garamond/EBGaramond-Italic.woff2") format("woff2"),
+    url("../fonts/garamond/EBGaramond-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  font-size: 62.5%; /*base 10*/
+}
+
+body {
+  font-family: "Montserrat";
+  font-weight: normal;
+  font-size: 2.5rem;
+  color: #14274a;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+}
+
+section h2 {
+  margin-bottom: 26px;
+  font-size: 3.6rem;
+  text-align: center;
+}
+
+.over_img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+/*----------------header------------------------*/
+
+header {
+  width: 100%;
+  max-width: 1920px;
+  margin: auto;
+  position: relative;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+header img {
+  object-fit: cover;
+  width: 100%;
+}
+
+header .over_img {
+  background: #14274a80;
+}
+
+header .over_img .content_banner {
+  max-width: 1570px;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  margin: auto;
+  align-content: space-between;
+  padding: 0 35px;
+}
+
+header .over_img .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .over_img .menu .menu_logo {
+  width: 256px;
+  height: 150px;
+  background: #e0b973;
+  border-radius: 0px 0px 50px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #14274a;
+}
+
+header .over_img .menu .menu_logo .logo_text {
+  font-family: "EB_Garamond";
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 4rem;
+  letter-spacing: 0.5rem;
+}
+
+header .over_img .menu .menu_logo .logo_desc {
+  font-family: "EB_Garamond";
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 1rem;
+}
+
+header .over_img .menu nav {
+}
+
+header .over_img .menu nav ul {
+  display: flex;
+}
+
+header .over_img .menu nav ul li {
+  padding: 0px 0px 0px 50px;
+}
+
+header .over_img .menu nav ul li.select,
+a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+header .over_img .menu nav ul li a {
+  color: #fff;
+}
+
+header .over_img .banner_text {
+}
+
+header .over_img .banner_text .line_01 {
+  font-size: 5rem;
+}
+
+header .over_img .banner_text .line_main {
+  font-family: "EB_Garamond";
+  font-size: 15.4rem;
+  letter-spacing: 0.7rem;
+  font-weight: bold;
+}
+
+header .over_img .banner_text .line_02 {
+  font-family: "EB_Garamond";
+  font-size: 6rem;
+}
+
+header .over_img .banner_text .line_03 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  padding-top: 5px;
+}
+
+header .over_img .booknow {
+  max-width: 268px;
+  margin: auto;
+}
+
+header .over_img .booknow .btn_booknow {
+  background: #e0b973;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 84px 1fr;
+  align-items: center;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+header .over_img .booknow .btn_booknow img {
+  padding: 28px;
+}
+
+header .over_img .scroll {
+  max-width: 100px;
+  margin: auto;
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-align: center;
+  padding-top: 80px;
+}
+
+header .over_img .scroll img {
+  width: 60px;
+  display: inline-block;
+  padding-top: 20px;
+}
+
+header .over_img .bottom_items {
+  padding-bottom: 30px;
+}
+
+/*---------------MAIN-----------*/
+
+main {
+  padding: 0px 10px;
+}
+
+.reclame {
+  text-align: center;
+  font-size: 2.6rem;
+  padding: 90px 0;
+}
+
+.reclame h1{
+    font-family: "EB_Garamond";
+    font-size: 6rem;
+    font-weight: bold;
+    padding: 26px 0;
+}
+
+section {
+  width: 100%;
+  max-width: 1570px;
+  margin: 0 auto;
+  padding: 0px 10px;
+}
+
+section article {
+  display: grid;
+  align-items: center;
+  margin-bottom: 70px;
+  grid-template-columns: 4fr 5fr;
+}
+
+section article .description {
+  padding-left: 50px;
+  padding: 0px 100px 0px 30px;
+  border-left: 2px solid #14274a;
+}
+
+section article .description h2 {
+  font-family: "EB_Garamond";
+  font-weight: bold;
+  text-align: left;
+  font-size: 6rem;
+}
+
+section article .description p {
+  line-height: 4rem;
+}
+
+section article figure {
+  position: relative;
+}
+
+section article figure .over_img {
+  background: #14274a33;
+}
+
+section article button {
+  background: #e0b973;
+  padding: 20px 70px;
+  border-radius: 10px;
+  border: none;
+  color: #ffffff;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.testimonials {
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-family: "EB_Garamond";
+  font-size: 6rem;
+  font-weight: bold;
+  padding: 40px 0;
+}
+
+.testimonials .comment {
+  font-size: 3rem;
+  margin-bottom: 25px;
+}
+
+.testimonials .author {
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+}
+
+.testimonials .arrows {
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.testimonials .arrows .arrow {
+  background: #e0b973;
+  padding: 17px 20px;
+  border-radius: 10px;
+  margin: 0px 10px;
+}
+/*----------------triangulo--------------*/
+
+.triangulo {
+  width: 0;
+  height: 0;
+  margin: auto;
+  border-right: 75px solid transparent;
+  border-left: 75px solid transparent;
+  border-bottom: 50px solid #14274a;
+}
+
+/*------------------footer-----------------*/
+
+footer {
+  background: #14274a;
+  color: #ffffff;
+}
+
+footer .content_footer {
+  display: flex;
+  width: 100%;
+  max-width: 1570px;
+  margin: auto;
+  padding: 90px 0 65px 0;
+  font-size: 1.6rem;
+}
+
+footer .footer_logo {
+  width: 120px;
+  text-align: center;
+  font-family: "EB_Garamond";
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+footer .footer_logo .logo_text {
+  font-size: 2.5rem;
+}
+
+footer .footer_logo .logo_desc {
+  font-size: 0.9rem;
+  letter-spacing: 0.4rem;
+}
+
+footer .address p {
+  font-size: 1.4rem;
+  padding: 3px 0;
+}
+
+footer ul {
+}
+
+footer ul li {
+  margin-bottom: 25px;
+}
+
+footer ul li a:hover {
+  font-weight: normal;
+}
+
+footer ul li img {
+  display: inline-block;
+  margin-right: 30px;
+  width: 20px;
+}
+
+footer form {
+  width: 100%;
+  max-width: 360px;
+  padding-top: 30px;
+  display: flex;
+}
+
+footer form input {
+  height: 50px;
+  padding: 15px 25px;
+  border: 2px solid #e0b973;
+  border-radius: 5px 2px 2px 5px;
+  background: #14274a;
+  color: #ffffff;
+}
+
+footer form input::placeholder {
+  color: #ffffff;
+}
+
+footer form button {
+  height: 50px;
+  padding: 15px 25px;
+  border: 2px solid #e0b973;
+  border-radius: 0px 5px 5px 0px;
+  background: #e0b973;
+  color: #14274a;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1450px) {
+  body {
+    font-size: 2rem;
+  }
+
+  header .over_img .menu .menu_logo {
+    width: 200px;
+    height: 127px;
+    border-radius: 0px 0px 30px 30px;
+  }
+
+  header .over_img .menu .menu_logo .logo_text {
+    font-size: 3rem;
+  }
+
+  header .over_img .menu .menu_logo .logo_desc {
+    font-size: 1rem;
+  }
+
+  header .over_img .banner_text .line_01 {
+    font-size: 3rem;
+  }
+
+  header .over_img .banner_text .line_main {
+    font-size: 10.4rem;
+  }
+
+  header .over_img .banner_text .line_02 {
+    font-size: 4rem;
+  }
+
+  header .over_img .banner_text .line_03 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding-top: 3px;
+  }
+
+  header .over_img .booknow {
+    max-width: 230px;
+  }
+
+  header .over_img .booknow .btn_booknow {
+    font-size: 2rem;
+    grid-template-columns: 70px 1fr;
+  }
+
+  header .over_img .scroll {
+    font-size: 2rem;
+    padding-top: 40px;
+  }
+
+  header .over_img .scroll img {
+    width: 50px;
+    padding-top: 17px;
+  }
+
+  header .over_img .booknow .btn_booknow img {
+    padding: 22px;
+  }
+
+  .reclame {
+    font-size: 2.4rem;
+  }
+
+  section article .description h2 {
+    font-size: 4rem;
+  }
+
+  section article .description p {
+    line-height: 2.5rem;
+  }
+
+  section article button {
+    padding: 18px 60px;
+    font-size: 1.8rem;
+    margin-top: 25px;
+  }
+
+  .testimonials h2 {
+    font-size: 4rem;
+    padding: 30px 0;
+  }
+
+  .testimonials .comment {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .testimonials .author {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .testimonials .arrows .arrow {
+    padding: 13px 18px;
+  }
+
+  .testimonials .arrows {
+    margin-bottom: 70px;
+  }
+
+  .triangulo {
+    border-right: 60px solid transparent;
+    border-left: 60px solid transparent;
+    border-bottom: 40px solid #14274a;
+  }
+
+  footer .content_footer {
+    font-size: 1.3rem;
+  }
+
+  footer .address p {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    font-size: 1.8rem;
+  }
+
+  header .over_img .menu .menu_logo {
+    width: 180px;
+    height: 90px;
+    border-radius: 0px 0px 25px 25px;
+  }
+
+  header .over_img .menu .menu_logo .logo_text {
+    font-size: 2.5rem;
+  }
+
+  header .over_img .banner_text .line_01 {
+    font-size: 2.2rem;
+  }
+
+  header .over_img .banner_text .line_main {
+    font-size: 8.4rem;
+    letter-spacing: 0.4rem;
+  }
+
+  header .over_img .booknow {
+    max-width: 170px;
+  }
+
+  header .over_img .booknow .btn_booknow {
+    font-size: 1.5rem;
+    grid-template-columns: 50px 1fr;
+    border-radius: 7px;
+  }
+
+  header .over_img .booknow .btn_booknow img {
+    padding: 14px;
+    height: 50px;
+  }
+
+  header .over_img .scroll {
+    font-size: 1.5rem;
+    padding-top: 30px;
+  }
+
+  header .over_img .scroll img {
+    width: 35px;
+    height: auto;
+    padding-top: 9px;
+  }
+
+  .reclame {
+    font-size: 2rem;
+    padding: 50px 0;
+  }
+
+  section article {
+    margin-bottom: 36px;
+  }
+
+  section article .description h2 {
+    font-size: 3.2rem;
+  }
+
+  section article .description p {
+    line-height: 2rem;
+    font-size: 1.5rem;
+  }
+
+  section article button {
+    padding: 11px 40px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+
+  section article .description {
+    padding: 0px 60px 0px 25px;
+  }
+
+  .testimonials h2 {
+    font-size: 3rem;
+    padding: 25px 0;
+  }
+
+  .testimonials .comment {
+    font-size: 1.5rem;
+    margin-bottom: 14px;
+  }
+
+  .testimonials .author {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+
+  .testimonials .arrows .arrow {
+    padding: 6px 9px 4px 9px;
+    border-radius: 5px;
+  }
+
+  .testimonials .arrows .arrow img {
+    width: 9px;
+  }
+
+  .testimonials .arrows {
+    margin-bottom: 45px;
+  }
+
+  .triangulo {
+    border-right: 45px solid transparent;
+    border-left: 45px solid transparent;
+    border-bottom: 30px solid #14274a;
+  }
+
+  footer .content_footer {
+    font-size: 1rem;
+  }
+
+  footer .footer_logo {
+    padding-bottom: 10px;
+  }
+
+  footer .footer_logo .logo_text {
+    font-size: 2rem;
+  }
+
+  footer .address p {
+    font-size: 0.9rem;
+  }
+
+  footer ul li {
+    margin-bottom: 12px;
+  }
+
+  footer ul li img {
+    margin-right: 23px;
+    width: 15px;
+  }
+
+  footer form {
+  }
+
+  footer form input {
+    height: 35px;
+    padding: 6px 17px;
+    font-size: 1.2rem;
+  }
+
+  footer form input::placeholder {
+    font-size: 1.2rem;
+  }
+
+  footer form button {
+    height: 35px;
+    padding: 6px 17px;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header img {
+    height: 460px;
+  }
+
+  header .over_img .menu nav ul {
+    display: block;
+    font-size: 1.3rem;
+  }
+
+  header .over_img .menu nav ul li {
+    padding: 9px 0px 0px 50px;
+  }
+
+  header .over_img .menu nav ul li a {
+    color: #fff;
+    font-size: 1.3rem;
+  }
+
+  header .over_img .menu .menu_logo {
+    width: 150px;
+    height: 90px;
+    border-radius: 0px 0px 17px 15px;
+}
+
+  header .over_img .banner_text .line_01 {
+    font-size: 1.5rem;
+  }
+
+  header .over_img .banner_text .line_main {
+    font-size: 6.4rem;
+  }
+
+  header .over_img .banner_text .line_02 {
+    font-size: 3rem;
+  }
+
+  header .over_img .banner_text .line_03 {
+    font-size: 1.2rem;
+  }
+
+  header .over_img .booknow {
+    max-width: 120px;
+  }
+
+  header .over_img .booknow .btn_booknow {
+    font-size: 1rem;
+    grid-template-columns: 40px 1fr;
+    border-radius: 7px;
+  }
+
+  header .over_img .booknow .btn_booknow img {
+    padding: 11px;
+    height: 40px;
+  }
+
+  header .over_img .scroll {
+    font-size: 1rem;
+    padding-top: 17px;
+  }
+
+  header .over_img .scroll img {
+    width: 30px;
+}
+
+.reclame {
+    font-size: 1.8rem;
+    padding: 40px 0;
+}
+
+section article {
+    display: flex;
+    margin-bottom: 30px;
+    flex-direction: column;
+}
+
+section article button {
+    padding: 11px 40px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+}
+
+footer .content_footer {
+    flex-direction: column;
+}
+
+footer section {
+    width: 100%;
+    max-width: 1570px;
+    margin: 0 auto;
+    padding: 10px 40px;
+    text-align: center;
+}
+
+footer .footer_logo {
+    margin: auto;
+}
+
+footer form {
+    max-width: 100%;
+    justify-content: center;
+}
+
+}

@@ -1,0 +1,371 @@
+/*----------------header------------------------*/
+
+header {
+  width: 100%;
+  max-width: 1920px;
+  margin: auto;
+  position: relative;
+  color: #ffffff;
+  overflow: hidden;
+
+  img {
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .over_img {
+    background: #14274a80;
+
+    .content_banner {
+      max-width: 1570px;
+      width: 100%;
+      height: 100%;
+      display: grid;
+      margin: auto;
+      align-content: space-between;
+      padding: 0 35px;
+
+      .title_contact {
+        text-align: center;
+        font-size: 6rem;
+        font-weight: bold;
+        padding: 0 0 150px 0;
+      }
+    }
+
+    .menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .menu_logo {
+        width: 256px;
+        height: 150px;
+        background: #e0b973;
+        border-radius: 0px 0px 50px 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #14274a;
+
+        .logo_text {
+          font-family: "EB_Garamond";
+          font-weight: bold;
+          text-transform: uppercase;
+          font-size: 4rem;
+          letter-spacing: 0.5rem;
+        }
+
+        .logo_desc {
+          font-family: "EB_Garamond";
+          font-weight: bold;
+          text-transform: uppercase;
+          font-size: 1.5rem;
+          letter-spacing: 1rem;
+        }
+      }
+
+      nav {
+        ul {
+          display: flex;
+
+          li {
+            padding: 0px 0px 0px 50px;
+
+            &.select,
+            a:hover {
+              font-weight: bold;
+              text-decoration: underline;
+            }
+
+            a {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+
+    .banner_text {
+      .line_01 {
+        font-size: 5rem;
+      }
+
+      .line_main {
+        font-family: "EB_Garamond";
+        font-size: 15.4rem;
+        letter-spacing: 0.7rem;
+        font-weight: bold;
+      }
+
+      .line_02 {
+        font-family: "EB_Garamond";
+        font-size: 6rem;
+      }
+
+      .line_03 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+        padding-top: 5px;
+      }
+    }
+
+    .booknow {
+      max-width: 268px;
+      margin: auto;
+
+      .btn_booknow {
+        background: #e0b973;
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: 84px 1fr;
+        align-items: center;
+        font-weight: bold;
+        font-size: 2.5rem;
+
+        img {
+          padding: 28px;
+        }
+      }
+    }
+
+    .scroll {
+      max-width: 100px;
+      margin: auto;
+      font-weight: bold;
+      font-size: 2.5rem;
+      text-align: center;
+      padding-top: 80px;
+    }
+
+    .scroll img {
+      width: 60px;
+      display: inline-block;
+      padding-top: 20px;
+    }
+
+    .bottom_items {
+      padding-bottom: 30px;
+    }
+
+    &.contact {
+      background: #14274a;
+      height: 450px;
+      position: unset;
+    }
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  header {
+    .over_img {
+      .menu {
+        .menu_logo {
+          width: 200px;
+          height: 127px;
+          border-radius: 0px 0px 30px 30px;
+
+          .logo_text {
+            font-size: 3rem;
+          }
+
+          .logo_desc {
+            font-size: 1rem;
+          }
+        }
+      }
+
+      .content_banner {
+
+        .title_contact{
+          font-size:4rem;
+        }
+
+      }
+
+      .banner_text {
+        .line_01 {
+          font-size: 3rem;
+        }
+
+        .line_main {
+          font-size: 10.4rem;
+        }
+
+        .line_02 {
+          font-size: 4rem;
+        }
+
+        .line_03 {
+          font-size: 1.5rem;
+          line-height: 2rem;
+          padding-top: 3px;
+        }
+      }
+      .booknow {
+        max-width: 230px;
+
+        .btn_booknow {
+          font-size: 2rem;
+          grid-template-columns: 70px 1fr;
+
+          img {
+            padding: 22px;
+          }
+        }
+      }
+
+      .scroll {
+        font-size: 2rem;
+        padding-top: 40px;
+
+        img {
+          width: 50px;
+          padding-top: 17px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  header {
+    .over_img {
+
+      &.contact{
+        height: 300px;
+      }
+
+      .menu {
+        .menu_logo {
+          width: 180px;
+          height: 90px;
+          border-radius: 0px 0px 25px 25px;
+
+          .logo_text {
+            font-size: 2.5rem;
+          }
+        }
+      }
+
+      .content_banner {
+
+        .title_contact{
+          font-size:3rem;
+          padding: 0px 0 100px 0;
+        }
+
+      }
+
+      .banner_text {
+        .line_01 {
+          font-size: 2.2rem;
+        }
+
+        .line_main {
+          font-size: 8.4rem;
+          letter-spacing: 0.4rem;
+        }
+      }
+      .booknow {
+        max-width: 170px;
+
+        .btn_booknow {
+          font-size: 1.5rem;
+          grid-template-columns: 50px 1fr;
+          border-radius: 7px;
+
+          img {
+            padding: 14px;
+            height: 50px;
+          }
+        }
+      }
+      .scroll {
+        font-size: 1.5rem;
+        padding-top: 30px;
+
+        img {
+          width: 35px;
+          height: auto;
+          padding-top: 9px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    img {
+      height: 460px;
+    }
+
+    .over_img {
+      .menu {
+        nav ul {
+          display: block;
+          font-size: 1.3rem;
+        }
+
+        nav ul li {
+          padding: 9px 0px 0px 50px;
+        }
+
+        nav ul li a {
+          color: #fff;
+          font-size: 1.3rem;
+        }
+
+        .menu_logo {
+          width: 150px;
+          height: 90px;
+          border-radius: 0px 0px 17px 15px;
+        }
+      }
+
+      .banner_text {
+        .line_01 {
+          font-size: 1.5rem;
+        }
+
+        .line_main {
+          font-size: 6.4rem;
+        }
+
+        .line_02 {
+          font-size: 3rem;
+        }
+
+        .line_03 {
+          font-size: 1.2rem;
+        }
+      }
+
+      .booknow {
+        max-width: 120px;
+
+        .btn_booknow {
+          font-size: 1rem;
+          grid-template-columns: 40px 1fr;
+          border-radius: 7px;
+        }
+
+        .btn_booknow img {
+          padding: 11px;
+          height: 40px;
+        }
+      }
+
+      .scroll {
+        font-size: 1rem;
+        padding-top: 17px;
+
+        img {
+          width: 30px;
+        }
+      }
+    }
+  }
+}

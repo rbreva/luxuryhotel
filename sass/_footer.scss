@@ -1,0 +1,195 @@
+/*----------------triangulo--------------*/
+
+.triangulo {
+  width: 0;
+  height: 0;
+  margin: auto;
+  border-right: 75px solid transparent;
+  border-left: 75px solid transparent;
+  border-bottom: 50px solid #14274a;
+}
+
+/*------------------footer-----------------*/
+
+footer {
+  background: #14274a;
+  color: #ffffff;
+
+  .content_footer {
+    display: flex;
+    width: 100%;
+    max-width: 1570px;
+    margin: auto;
+    padding: 90px 0 65px 0;
+    font-size: 1.6rem;
+  }
+
+  .footer_logo {
+    width: 120px;
+    text-align: center;
+    font-family: "EB_Garamond";
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+
+    .logo_text {
+      font-size: 2.5rem;
+    }
+
+    .logo_desc {
+      font-size: 0.9rem;
+      letter-spacing: 0.4rem;
+    }
+  }
+  .address p {
+    font-size: 1.4rem;
+    padding: 3px 0;
+  }
+
+  ul {
+    li {
+      margin-bottom: 25px;
+
+      a:hover {
+        font-weight: normal;
+      }
+
+      img {
+        display: inline-block;
+        margin-right: 30px;
+        width: 20px;
+      }
+    }
+  }
+
+  form {
+    width: 100%;
+    max-width: 360px;
+    padding-top: 30px;
+    display: flex;
+
+    input {
+      height: 50px;
+      padding: 15px 25px;
+      border: 2px solid #e0b973;
+      border-radius: 5px 2px 2px 5px;
+      background: #14274a;
+      color: #ffffff;
+
+      &::placeholder {
+        color: #ffffff;
+      }
+    }
+
+    button {
+      height: 50px;
+      padding: 15px 25px;
+      border: 2px solid #e0b973;
+      border-radius: 0px 5px 5px 0px;
+      background: #e0b973;
+      color: #14274a;
+      font-weight: bold;
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .triangulo {
+    border-right: 60px solid transparent;
+    border-left: 60px solid transparent;
+    border-bottom: 40px solid #14274a;
+  }
+
+  footer {
+      
+    .content_footer {
+      font-size: 1.3rem;
+    }
+
+    .address p {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .triangulo {
+    border-right: 45px solid transparent;
+    border-left: 45px solid transparent;
+    border-bottom: 30px solid #14274a;
+  }
+
+  footer {
+
+    .content_footer {
+      font-size: 1rem;
+    }
+
+    .footer_logo {
+      padding-bottom: 10px;
+
+      .logo_text {
+        font-size: 2rem;
+      }
+    }
+    .address p {
+      font-size: 0.9rem;
+    }
+
+    ul {
+      li {
+        margin-bottom: 12px;
+
+        img {
+          margin-right: 23px;
+          width: 15px;
+        }
+      }
+    }
+
+    form {
+
+      input {
+        height: 35px;
+        padding: 6px 17px;
+        font-size: 1.2rem;
+
+        &::placeholder {
+          font-size: 1.2rem;
+        }
+      }
+
+      button {
+        height: 35px;
+        padding: 6px 17px;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  footer {
+    .content_footer {
+      flex-direction: column;
+    }
+
+    section {
+      width: 100%;
+      max-width: 1570px;
+      margin: 0 auto;
+      padding: 10px 40px;
+      text-align: center;
+    }
+
+    .footer_logo {
+      margin: auto;
+    }
+
+    form {
+      max-width: 100%;
+      justify-content: center;
+    }
+  }
+}

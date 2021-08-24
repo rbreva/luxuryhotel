@@ -1,0 +1,96 @@
+/*--------GLOBALES--------------*/
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat/Montserrat-Regular.woff2") format("woff2"),
+    url("../fonts/montserrat/Montserrat-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat/Montserrat-Bold.woff2") format("woff2"),
+    url("../fonts/montserrat/Montserrat-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "EB_Garamond";
+  src: url("../fonts/garamond/EBGaramond-Regular.woff2") format("woff2"),
+    url("../fonts/garamond/EBGaramond-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "EB_Garamond";
+  src: url("../fonts/garamond/EBGaramond-Italic.woff2") format("woff2"),
+    url("../fonts/garamond/EBGaramond-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  font-size: 62.5%; /*base 10*/
+}
+
+body {
+  font-family: "Montserrat";
+  font-weight: normal;
+  font-size: 2.5rem;
+  color: #14274a;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+}
+
+section h2 {
+  margin-bottom: 26px;
+  font-size: 3.6rem;
+  text-align: center;
+}
+
+.over_img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+@media screen and (max-width: 1450px) {
+  body {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    font-size: 1.8rem;
+  }
+}
